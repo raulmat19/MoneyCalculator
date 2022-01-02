@@ -29,7 +29,7 @@ public class ExchangeRateArchive implements ExchangeRateLoader{
                 
                 String[] splitLine = lineText.split(",");
                 if (splitLine[1].equals(from.getCode())){
-                    if (splitLine[2].equals(from.getCode())){
+                    if (splitLine[2].equals(to.getCode())){
                         rate = Double.parseDouble(splitLine[0]);
                     }
                 }
