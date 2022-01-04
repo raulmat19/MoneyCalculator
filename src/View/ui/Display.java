@@ -1,4 +1,4 @@
-package View;
+package View.ui;
 
 import Model.Money;
 

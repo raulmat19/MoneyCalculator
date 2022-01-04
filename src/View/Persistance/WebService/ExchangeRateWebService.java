@@ -1,8 +1,8 @@
-package Persistence.Persistence_WebService;
+package View.Persistance.WebService;
 
 import Model.Currency;
 import Model.ExchangeRate;
-import Persistence.ExchangeRateLoader;
+import View.Persistance.ExchangeRateLoader;
 
 public class ExchangeRateWebService implements ExchangeRateLoader{
 

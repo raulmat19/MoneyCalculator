@@ -1,7 +1,7 @@
-package Persistence.Persistence_WebService;
+package View.Persistance.WebService;
 
 import Model.Currency;
-import Persistence.CurrencyLoader;
+import View.Persistance.CurrencyLoader;
 import java.util.ArrayList;
 import java.util.List;
 

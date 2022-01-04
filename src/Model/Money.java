@@ -19,7 +19,7 @@ public class Money {
 
     @Override
     public String toString() {
-        return "Money{" + "amount=" + amount + ", currency=" + currency + '}';
+        return this.getAmount() + this.getCurrency().getSymbol();
     }
     
     

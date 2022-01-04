@@ -1,7 +1,7 @@
-package Persistence.Persistence_Archive;
+package View.Persistance.Files;
 
 import Model.Currency;
-import Persistence.CurrencyLoader;
+import View.Persistance.CurrencyLoader;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;

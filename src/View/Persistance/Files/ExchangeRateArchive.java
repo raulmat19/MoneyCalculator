@@ -1,8 +1,8 @@
-package Persistence.Persistence_Archive;
+package View.Persistance.Files;
 
 import Model.Currency;
 import Model.ExchangeRate;
-import Persistence.ExchangeRateLoader;
+import View.Persistance.ExchangeRateLoader;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
