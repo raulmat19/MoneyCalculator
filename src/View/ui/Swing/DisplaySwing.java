@@ -27,5 +27,10 @@ public class DisplaySwing extends JPanel implements Display{
     public void display(Money money) {
         this.displayArea.setText(money.toString());
     }
+    
+    @Override
+    public void resetDisplay(){
+        this.displayArea.setText(null);
+    }
 
 }

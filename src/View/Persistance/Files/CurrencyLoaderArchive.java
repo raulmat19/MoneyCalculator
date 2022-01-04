@@ -44,7 +44,4 @@ public class CurrencyLoaderArchive implements CurrencyLoader {
         }
         return listCurrencies;
     }
-
-    
-    
 }

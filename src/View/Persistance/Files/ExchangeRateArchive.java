@@ -45,8 +45,4 @@ public class ExchangeRateArchive implements ExchangeRateLoader{
         
         return new ExchangeRate(rate, from, to);
     }
-    
-    
-    
-    
 }

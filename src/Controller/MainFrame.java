@@ -46,23 +46,18 @@ public class MainFrame extends JFrame{
     public void updateDisplay(){
         
         Money money = this.dl.getMoney();
-        Currency currencyTo = this.dl.getCurrencyTo();
-        Money newMoney = calculateAmount(money, currencyTo);
-        this.dp.display(newMoney);
+        if (money.getAmount() != 0){
+            Currency currencyTo = this.dl.getCurrencyTo();
+            Money newMoney = calculateAmount(money, currencyTo);
+            this.dp.display(newMoney);
+        }
     }
     
-    public void DisplayError(String line){
-        System.out.println(line);
+    public void DisplayError(){
+        this.dp.resetDisplay();
     }
 
     private Money calculateAmount(Money money, Currency currencyTo) {
         return new Money(money.getAmount() * loader.loadAExchangeRate(money.getCurrency(), currencyTo).getRate(), currencyTo);
     }
-
-    
-    
-    
-    
-    
-
 }

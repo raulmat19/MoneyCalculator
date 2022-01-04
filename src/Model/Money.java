@@ -21,8 +21,4 @@ public class Money {
     public String toString() {
         return this.getAmount() + this.getCurrency().getSymbol();
     }
-    
-    
-    
-    
 }

@@ -119,7 +119,7 @@ public class DialogSwing extends JPanel implements Dialog{
                         amount = Double.parseDouble(line);
                         controller.updateDisplay();
                     } catch (NumberFormatException e){
-                        controller.DisplayError("Flaco mete números");
+                        controller.DisplayError();
                     }
                 } catch (BadLocationException ble) {
                     System.out.println(ble.getMessage());

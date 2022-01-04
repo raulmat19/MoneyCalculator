@@ -27,8 +27,5 @@ public class Currency {
     public String toString() {
         return this.getCode() + "(" + this.getSymbol() + ")";
     }
-    
-    
-    
-    
 }
+
