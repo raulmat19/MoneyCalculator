@@ -4,7 +4,7 @@ import Model.Currency;
 import View.Persistance.CurrencyLoader;
 import View.Persistance.ExchangeRateLoader;
 import View.Persistance.Files.CurrencyLoaderArchive;
-import View.Persistance.Files.ExchangeRateArchive;
+import View.Persistance.WebService.ExchangeRateWebService;
 
 import java.util.List;
 
@@ -15,8 +15,9 @@ public class MoneyCalculator {
         CurrencyLoader currencyLoader = new CurrencyLoaderArchive("currency.txt");
         // CurrencyLoader currencyLoader = new CurrencyLoaderWebService("C:\\Users\\raulp\\Documents\\NetBeansProjects\\MoneyCalculator\\currency.txt");
         List<Currency> listCurrencies = currencyLoader.loadAllCurrencies();
-        ExchangeRateLoader exchangeRateLoader = new ExchangeRateArchive("exchangeRates.txt");
+        ExchangeRateLoader exchangeRateLoader = new ExchangeRateWebService();
         MainFrame gui = new MainFrame(listCurrencies, exchangeRateLoader);
+        
     }
 }
 
