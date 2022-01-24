@@ -30,7 +30,6 @@ public class MainFrame extends JFrame{
         this.add((DialogSwing) setDialog(currencies));
         this.add((DisplaySwing) setDisplay());
         this.setVisible(true);
-        
     }
     
     private Dialog setDialog(List<Currency> currencies){
@@ -46,7 +45,7 @@ public class MainFrame extends JFrame{
     public void updateDisplay(){
         
         Money money = this.dl.getMoney();
-        if (money.getAmount() != 0){
+        if (money.getAmount() > 0){
             Currency currencyTo = this.dl.getCurrencyTo();
             Money newMoney = calculateAmount(money, currencyTo);
             this.dp.display(newMoney);

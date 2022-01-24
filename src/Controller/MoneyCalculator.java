@@ -13,11 +13,9 @@ public class MoneyCalculator {
     public static void main(String[] args) {
         
         CurrencyLoader currencyLoader = new CurrencyLoaderArchive("currency.txt");
-        // CurrencyLoader currencyLoader = new CurrencyLoaderWebService("C:\\Users\\raulp\\Documents\\NetBeansProjects\\MoneyCalculator\\currency.txt");
         List<Currency> listCurrencies = currencyLoader.loadAllCurrencies();
         ExchangeRateLoader exchangeRateLoader = new ExchangeRateWebService();
         MainFrame gui = new MainFrame(listCurrencies, exchangeRateLoader);
-        
     }
 }
 
